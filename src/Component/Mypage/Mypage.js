@@ -3,8 +3,8 @@ import React from 'react'
 
 const NameTag = (props) => {
     return (
-        <div className='container'>
-            <div className='row' style={{ border: '1px solid black' }}>
+        <div className='container' style={{ border: '1px solid black', height: '60px'}}>
+            <div className='row'>
                 <div className='col-4'>
                     사진
                 </div>
@@ -13,9 +13,16 @@ const NameTag = (props) => {
                     <div>내 정보 수정</div>
                 </div>
             </div>
-            <div className='row' style={{ border: '1px solid black' }}>
+        </div>
+    )
+}
+
+const PostList = () => {
+    return (
+        <div className='container' style={{ border: '1px solid black', height: '60px' }}>
+            <div className='row'>
                 <div className='col-8'>
-                    내가 쓴 글
+                    내가쓴 글
                 </div>
                 <div className='col-4'> 더 보기</div>
             </div>
@@ -23,14 +30,27 @@ const NameTag = (props) => {
     )
 }
 
-const PostList = () => {
+const Settings = () => {
     return (
-        <div className='container' style={{ border: '1px solid black' }}>
+        <div className='container' style={{ border: '1px solid black', height: '100px' }}>
+            <div className='row'>설정</div>
             <div className='row'>
-                <div className='col-8'>
-                    내가쓴 글
-                </div>
-                <div className='col-4'> 더 보기</div>
+                <div>알림</div>
+                <div>다크모드</div>
+            </div>
+        </div>
+    )
+}
+
+const ServiceManage = () => {
+    return (
+        <div className='container' style={{ border: '1px solid black', height: '150px' }}>
+            <div className='row'>서비스 관리</div>
+            <div className='row'>
+                <div>공지사항</div>
+                <div>문의</div>
+                <div>로그아웃</div>
+                <div>회원탈퇴</div>
             </div>
         </div>
     )
@@ -42,6 +62,8 @@ const Mypage = () => {
             <h1>Mypage</h1>
             <NameTag />
             <PostList />
+            <Settings />
+            <ServiceManage />
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
-import Home from './Component/Main/Home';
+import Login from './Component/Login/Login';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <RecoilRoot>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Login />} />
           </Routes>
         </BrowserRouter>
       </RecoilRoot>

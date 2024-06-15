@@ -1,0 +1,29 @@
+.container {
+    text-align: center;
+    background-color: white;
+    height: 100vh;
+}
+
+.login_txt{
+    padding: 87px 0px 0px 33px;
+    color: #333333;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: left;
+}
+
+.logo{
+    padding: 3px 0px 0px 33px;
+    text-align: left;
+    font-weight: 800;
+    color: #91EB86;
+    font-size: 50px;
+}
+
+.e41 {
+    position: absolute;
+    bottom: 0;
+    right: 568px;
+    max-width: 400px;
+    padding-right: 0;
+}

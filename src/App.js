@@ -10,7 +10,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Login />} />
-            <Route path="/agreement" component={Agreement} />
+            <Route path="/agreement" element={<Agreement />} />
           </Routes>
         </BrowserRouter>
       </RecoilRoot>

@@ -1,12 +1,14 @@
 import React from 'react';
-import './home.css';
+import './Agreement.css';
 
-function Home() {
+
+function Agreement() {
+
   return (
     <div className="container">
-      Main페이지
+      dkdk
     </div>
   );
 }
 
-export default Home;
+export default Agreement;

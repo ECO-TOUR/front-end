@@ -1,8 +1,8 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
-import Login from './component/Login/Login';
-import Agreement from './component/Agreement/Agreement'
-import Home from './component/Main/Home';
+import Login from './Component/Login/Login';
+import Agreement from './Component/Agreement/Agreement'
+import Home from './Component/Main/Home';
 // import Mypage from './component/Mypage/Mypage.js';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <>
       <RecoilRoot>
         <BrowserRouter>
-          <Routes>EAD
+          <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/agreement" element={<Agreement />} />
             {/* <Route path="/mypage" element={<Mypage />} /> */}

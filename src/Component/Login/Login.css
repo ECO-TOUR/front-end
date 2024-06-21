@@ -1,5 +1,6 @@
 /* 전체 화면 */
 .container {
+    position: relative;
     text-align: center;
     background-color: white;
     height: 100vh;
@@ -26,19 +27,15 @@
 .e41 {
     position: absolute;
     bottom: 0;
-    right: 568px;
-    max-width: 400px;
-    padding-right: 0;
     z-index: 0;
+    right: 0;
 }
 
 .e42 {
     position: absolute;
     bottom: 0;
-    left: 568px;
-    max-width: 400px;
-    padding-right: 0;
     z-index: 0;
+    left: 0;
 }
 
 .login_btn{

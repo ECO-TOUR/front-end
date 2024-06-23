@@ -42,8 +42,14 @@
 
 /* 버튼 체크 아이콘*/
 .agree_check{
-    margin: 6px 5.5px;
+    display: none;
 }
+
+.agree_check.clicked{
+    display: flex;
+    margin: 6px 5px;
+}
+
 
 /* 약관 동의 텍스트 */
 .agree_text{

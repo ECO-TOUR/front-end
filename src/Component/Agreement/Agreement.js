@@ -17,20 +17,35 @@ function Agreement() {
 
     if(isAllClicked == false){
       setIsAllClicked(!isAllClicked);
+      
+      if(isClicked1 == false){
+        setIsClicked1(!isClicked1);
+      }
+
+      if(isClicked2 == false){
+        setIsClicked2(!isClicked2);
+      }
+
+      if(isClicked3 == false){
+        setIsClicked3(!isClicked3);
+      }
     }
 
-    if(isClicked1 == false){
-      setIsClicked1(!isClicked1);
-    }
+    else{
+      setIsAllClicked(!isAllClicked);
+      
+      if(isClicked1 == true){
+        setIsClicked1(!isClicked1);
+      }
 
-    if(isClicked2 == false){
-      setIsClicked2(!isClicked2);
-    }
+      if(isClicked2 == true){
+        setIsClicked2(!isClicked2);
+      }
 
-    if(isClicked3 == false){
-      setIsClicked3(!isClicked3);
+      if(isClicked3 == true){
+        setIsClicked3(!isClicked3);
+      }
     }
-
   };
 
   const isCheckBtnClick1 = () => {

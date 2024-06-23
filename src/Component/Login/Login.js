@@ -8,10 +8,15 @@ import { useNavigate } from 'react-router-dom';
 
 function Login() {
 
+  const Rest_api_key='1c0e13d2c1d6cf63767d0a06515d1d6e' //REST API KEY
+  const redirect_uri = 'http://localhost:3000/auth' //Redirect URI
+  // oauth 요청 URL
+  const kakaoURL = `https://kauth.kakao.com/oauth/authorize?client_id=${Rest_api_key}&redirect_uri=${redirect_uri}&response_type=code`
+
     const navigate = useNavigate();
 
     const onclickLoginBtn = () => {
-      navigate('/agreement');
+      window.location.href = kakaoURL;
     };
 
   return (

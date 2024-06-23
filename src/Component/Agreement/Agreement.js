@@ -14,10 +14,23 @@ function Agreement() {
   const [isClicked3, setIsClicked3] = useState(false);
 
   const allCheckBtnClick = () => {
-    setIsAllClicked(!isAllClicked);
-    setIsClicked1(!isClicked1);
-    setIsClicked2(!isClicked2);
-    setIsClicked3(!isClicked3);
+
+    if(isAllClicked == false){
+      setIsAllClicked(!isAllClicked);
+    }
+
+    if(isClicked1 == false){
+      setIsClicked1(!isClicked1);
+    }
+
+    if(isClicked2 == false){
+      setIsClicked2(!isClicked2);
+    }
+
+    if(isClicked3 == false){
+      setIsClicked3(!isClicked3);
+    }
+
   };
 
   const isCheckBtnClick1 = () => {

@@ -11,6 +11,7 @@ function Login() {
     const navigate = useNavigate();
 
     const onclickLoginBtn = () => {
+      //window.location.href = kakaoURL;
       navigate('/agreement');
     };
 

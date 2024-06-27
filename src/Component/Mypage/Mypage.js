@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Switch from 'react-switch';
 import profileIcon from '../../assets/profile.svg';
 import './Mypage.css'
-
+import Header from '../Main/Header';
 
 const ToggleSwitch = () => {
     const [checked, setChecked] = useState(false);
@@ -76,6 +76,7 @@ const ServiceManage = () => {
 const Mypage = () => {
     return (
         <div>
+            <Header />
             <NameTag />
             <PostList />
             <Settings />

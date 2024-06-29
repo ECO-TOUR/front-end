@@ -75,7 +75,7 @@ function Agreement() {
   // 회원가입 버튼 클릭 시
   const onClickSignUpBtn = () => {
     if(isAllClicked == true){
-      navigate('/main');
+      navigate('/key-word');
     }
 
     else{

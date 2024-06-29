@@ -25,11 +25,11 @@ function KeyWord() {
     const navigate = useNavigate();
 
     const onClickNextBtn = () => {
-        if(keywordCount == 0){
+        if(keywordCount === 0){
             alert("키워드를 1개 이상 선택해주세요!");
         }
         else
-            navigate("/home");
+            navigate("/intro");
     }
 
   return (

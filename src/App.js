@@ -3,6 +3,7 @@ import { RecoilRoot } from 'recoil';
 import Login from './Component/Login/Login';
 import Agreement from './Component/Agreement/Agreement'
 import Home from './Component/Main/Home';
+import KeyWord from './Component/Onboarding/KeyWord';
 // import Mypage from './component/Mypage/Mypage.js';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/agreement" element={<Agreement />} />
+            <Route path="/key-word" element={<KeyWord />} />
             <Route path="/main" element={<Home />} />
             {/* <Route path="/mypage" element={<Mypage />} /> */}
           </Routes>

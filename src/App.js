@@ -4,8 +4,8 @@ import Login from './component/Login/Login.js';
 import Agreement from './component/Agreement/Agreement.js'
 import Home from './component/Main/Home.js';
 import Mypage from './component/Mypage/Mypage.js';
-import KeyWord from './Component/Onboarding/KeyWord';
-import Mypage from './component/Mypage/Mypage.js';
+import Community from './component/Community/Community.js'
+import KeyWord from './component/Onboarding/KeyWord';
 
 function App() {
   return (
@@ -18,6 +18,8 @@ function App() {
             <Route path="/key-word" element={<KeyWord />} />
             <Route path="/main" element={<Home />} />
             <Route path="/mypage" element={<Mypage />} />
+            <Route path="/community" element={<Community />} />
+
           </Routes>
         </BrowserRouter>
       </RecoilRoot>
